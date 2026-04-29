@@ -11,7 +11,7 @@ import Navbar from "./components/Navbar";
 import { Outlet } from 'react-router';
 import CheckoutAddress from "./pages/CheckoutAddress";
 import Checkout from "./pages/Checkout";
-import OrderSucess from "./pages/OrderSucess";
+import OrderSucess from "./pages/orderSucess";
 
 
 function Layout(){
@@ -38,7 +38,7 @@ const router = createBrowserRouter([
     { path: "/admin/products/edit/:id", element: <EditProduct /> },
     { path: "/checkout-address", element: <CheckoutAddress /> },
     { path: "/checkout", element: <Checkout /> },
-    { path: "/order-success/:id", element: <OrderSucess /> },
+    { path: "/order-success/:id", element: <orderSucess /> },
     ],
   }, 
 ]);

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useNavigate } from 'react-router';
+import { useNavigate, Link } from 'react-router';
 import api from '../api/axios';
 import birdLogo from '../assets/bird.png'; 
 
@@ -125,7 +125,10 @@ export default function Login() {
                         </div>
 
                         <p className="text-center text-xs text-gray-400 font-['Quicksand']">
-                            New Akshansh's Store? <a href="/signup" className="font-bold text-gray-700 border-b border-gray-700 ml-1 hover:text-black">Create Account</a>
+                            New to Akshansh's Store? 
+                            <Link to="/Signup" className="font-bold text-gray-700 border-b border-gray-700 ml-1 hover:text-black">
+                            Create Account
+                            </Link>
                         </p>
                     </div>
                 </div>

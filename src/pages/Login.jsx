@@ -21,7 +21,7 @@ export default function Login() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await api.post("auth/Login", form);
+            const res = await api.post("auth/login", form);
             localStorage.setItem("token", res.data.token);
             localStorage.setItem("userId", res.data.user.id);
             setMsg("Login Successful");
@@ -82,7 +82,7 @@ export default function Login() {
 
                         <form onSubmit={handleSubmit} className="space-y-8">
                             <div className="border-b border-gray-200 py-1">
-                                <label className="block text-[10px] uppercase font-bold text-gray-400 tracking-widest font-['Quicksand']">User name or Email</label>
+                                <label className="block text-[10px] uppercase font-bold text-gray-400 tracking-widest font-['Quicksand']">User Email</label>
                                 <input
                                     type="email"
                                     name="email"
